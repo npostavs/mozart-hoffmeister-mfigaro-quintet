@@ -6,7 +6,7 @@ PARTS := $(addsuffix .pdf,$(INSTRUMENTS))
 NOTES := $(addsuffix -notes.ily,$(INSTRUMENTS))
 
 define instrument-part-depend-on-notes
- $(1): $(1)-notes.ily
+ $(1).pdf: $(1)-notes.ily
 endef
 
 score.pdf $(PARTS) : defs.ily

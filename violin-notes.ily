@@ -14,7 +14,7 @@ violin = \relative c'' {
   d8 r a'4~ |
   a32[ g-\sfzp fs e] d cs b a g'[ fs e d] cs d e cs d8 d'4 d8 |
   d4~ d8 r8 r g, r b |
-  r a r g r gs r e |
+  r a r g r fs r e |
   r e r fs r <g d' b'>-\f r <a g'> | \obr
   %% original line 3
   <a fs'>4 r d(-\p cs) |

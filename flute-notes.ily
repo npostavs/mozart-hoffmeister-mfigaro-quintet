@@ -30,7 +30,7 @@ flute = \relative c'' {
   b4. a8 gs4 r4 |
   r2 r4 b8.( cs16) |
   a8-. a-. r4 r8 a8-. b8.( cs16) |
-  a4.-. a8-. a8.( b32 cs) d16 b fs d |
+  a4.-. a8-. a8.( b32 cs) d16 b gs d |
   cs8( e) r4 e4. e8 |
   e8-. a16( fs) e8-. r8 \ombr
   %% original line 5
