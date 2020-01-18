@@ -2,8 +2,7 @@
 \language "english"
 
 cello = \relative c {
-  \key d \major \time 4/4
-  \partial 2 r4 r |
+  \startSettings r4 r |
   R1*3 |
   r2 d,16-\p d' d d d4:16 |
   d4:-\sfp d: d,16 d' d d d4: |

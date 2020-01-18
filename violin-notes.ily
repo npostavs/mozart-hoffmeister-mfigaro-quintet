@@ -2,8 +2,7 @@
 \language "english"
 
 violin = \relative c'' {
-  \key d \major \time 4/4
-  \partial 2 a4-. cs4-. |
+  \startSettings a4-. cs4-. |
   %% NOTE: the original seems to have an extra 8th rest in this bar.
   cs( d) r8 fs, r g |
   a4 r fs2( |

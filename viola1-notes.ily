@@ -2,8 +2,7 @@
 \language "english"
 
 violaI = \relative c' {
-  \key d \major \time 4/4
-  \partial 2 fs4-.-\p g-. |
+  \startSettings fs4-.-\p g-. |
   g( fs8) r d-. r e-. r |
   fs4-. r <a, d>2~ |
   <a e'> d8-. r <b e>-. r |
@@ -43,8 +42,8 @@ violaI = \relative c' {
   %% original line 7
   a8-. e16-. e-. fs-. fs-. g?-. g-. |
   fs8-. d16-. d-. b'-. b-. d,-. d-. cs8-.  e16[-. e]-. fs-. fs-. g-. g-. |
-  fs8-. fs16[-. fs]-. d-. d-. b-. b-. cs8-. a16(-\< gs g-\! fs e d) |
-  cs8 r r16 e'16 e e \ombr
+  fs8-. fs16[-. fs]-. d-. d-. b-. b-. cs8-. a'16(-\< gs g-\! fs e d) |
+  cs8 r r16 e='16 e e \ombr
   %% original line 8
   e8 r r16 g, g g |
   g8 r cs16-. cs-. cs-. r e-. e-. e-. r cs-. cs-. e-. cs-. |

@@ -6,11 +6,11 @@
 
 \book {
   \paper {
-    ragged-last = ##t
+    page-count = 1
   }
   \score {
     \header { piece = "Larghetto" }
-    \new Staff \with { instrumentName = #"Flauto" } << \flute >>
+    \new Staff \with { instrumentName = #"Oboe" } << \removeWithTag #'originalBreak { \transpose d f, \flute } >>
     \layout {
       \context {
         \Score

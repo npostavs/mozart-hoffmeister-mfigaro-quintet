@@ -9,11 +9,16 @@
   \score {
     \header { piece = "Larghetto" }
     \new GrandStaff { <<
-      \new Staff \with { instrumentName = #"Flauto" } << \removeWithTag #'originalBreak \flute >>
-      \new Staff \with { instrumentName = #"Violino" } << \removeWithTag #'originalBreak \violin >>
-      \new Staff \with { instrumentName = #"ViolaI" } << \removeWithTag #'originalBreak { \clef alto \violaI } >>
-      \new Staff \with { instrumentName = #"ViolaII" } << \removeWithTag #'originalBreak { \clef alto \violaII } >>
-      \new Staff \with { instrumentName = #"Cello" } << \removeWithTag #'originalBreak { \clef bass \cello } >>
+      \new Staff \with { instrumentName = #"Oboe" }
+      << \removeWithTag #'originalBreak { \transpose d f, \flute } >>
+      \new Staff \with { instrumentName = #"Violino" }
+      << \removeWithTag #'originalBreak { \transpose d f \violin } >>
+      \new Staff \with { instrumentName = #"Violino II" }
+      << \removeWithTag #'originalBreak { \transpose d f \violaI } >>
+      \new Staff \with { instrumentName = #"Viola" }
+      << \removeWithTag #'originalBreak { \clef alto \transpose d f \violaII } >>
+      \new Staff \with { instrumentName = #"Cello" }
+      << \removeWithTag #'originalBreak { \clef bass \transpose d f \cello } >>
     >> }
     \layout {
       \context {

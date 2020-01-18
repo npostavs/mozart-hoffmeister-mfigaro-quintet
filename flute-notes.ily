@@ -3,8 +3,7 @@
 
 flute = \relative c'' {
   \override DynamicTextSpanner.style = #'none
-  \key d \major \time 4/4
-  \partial 2 d4-. -\dol e-. |
+  \startSettings d4-.-\dol e-. |
   e( fs8) r16 fs16 fs4-. g-. |
   a4( fs8) r8 fs( d a4) |
   g'8( e a,8.) a'16 a4.-. b16( g) |

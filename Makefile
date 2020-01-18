@@ -11,12 +11,17 @@ paper-size ?= $(shell cat /etc/papersize)
 
 LYFLAGS := -dpaper-size=\"$(paper-size)\"
 
-all : $(PARTS) score.pdf
+all : $(PARTS) score.pdf violin2.pdf viola.pdf
 %.pdf : %.ly
 	lilypond $(LYFLAGS) $<
 
 score.pdf $(PARTS) : defs.ily
 $(foreach instr,$(INSTRUMENTS),$(eval $(call instrument-part-depend-on-notes,$(instr))))
 score.pdf : $(NOTES)
+
+violin2.pdf : viola1.pdf
+	ln $< $@
+viola.pdf : viola2.pdf
+	ln $< $@
 
 .PHONY : all

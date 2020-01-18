@@ -5,16 +5,14 @@
 \include "violin-notes.ily"
 
 \book {
-  \paper {
-    ragged-last = ##t
-  }
   \score {
     \header { piece = "Larghetto" }
-    \new Staff \with { instrumentName = #"Violino" } << \violin >>
+    \new Staff \with { instrumentName = #"Violin" } << \removeWithTag #'originalBreak { \transpose d f \violin } >>
     \layout {
       \context {
         \Score
-        \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/1)
+        %% This part really doesn't fit on 1 page, no point in squeezing.
+        % \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/1)
       }
     }
   }

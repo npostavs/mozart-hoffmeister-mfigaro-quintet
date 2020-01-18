@@ -19,4 +19,5 @@ dol = \markup { \italic { dol } }
   tagline = ##f
 }
 
+startSettings = { \compressFullBarRests \key d \major \time 4/4 \partial 2 }
 allegro = { \set Score.tempoHideNote = ##t \time 4/4 \tempo "Allegro" 4=120 }

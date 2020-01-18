@@ -2,8 +2,7 @@
 \language "english"
 
 violaII = \relative c' {
-  \key d \major \time 4/4
-  \partial 2 r4 a-\p |
+  \startSettings r4 a-\p |
   a( d,8) r d r d r |
   d4 r d2( |
   cs) d8-. r g-. r |
