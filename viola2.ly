@@ -10,7 +10,7 @@
   }
   \score {
     \header { piece = "Larghetto" }
-    \new Staff \with { instrumentName = #"Viola II" } << \violaII >>
+    \new Staff \with { instrumentName = #"Viola II" } << { \clef alto \violaII } >>
     \layout {
       \context {
         \Score

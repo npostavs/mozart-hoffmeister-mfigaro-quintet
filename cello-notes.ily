@@ -2,7 +2,7 @@
 \language "english"
 
 cello = \relative c {
-  \clef bass \key d \major \time 4/4
+  \key d \major \time 4/4
   \partial 2 r4 r |
   R1*3 |
   r2 d,16-\p d' d d d4:16 |

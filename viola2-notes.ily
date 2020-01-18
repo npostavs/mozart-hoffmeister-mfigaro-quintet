@@ -2,7 +2,7 @@
 \language "english"
 
 violaII = \relative c' {
-  \clef alto \key d \major \time 4/4
+  \key d \major \time 4/4
   \partial 2 r4 a-\p |
   a( d,8) r d r d r |
   d4 r d2( |

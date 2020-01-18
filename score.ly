@@ -11,9 +11,9 @@
     \new GrandStaff { <<
       \new Staff \with { instrumentName = #"Flauto" } << \removeWithTag #'originalBreak \flute >>
       \new Staff \with { instrumentName = #"Violino" } << \removeWithTag #'originalBreak \violin >>
-      \new Staff \with { instrumentName = #"ViolaI" } << \removeWithTag #'originalBreak \violaI >>
-      \new Staff \with { instrumentName = #"ViolaII" } << \removeWithTag #'originalBreak \violaII >>
-      \new Staff \with { instrumentName = #"Cello" } << \removeWithTag #'originalBreak \cello >>
+      \new Staff \with { instrumentName = #"ViolaI" } << \removeWithTag #'originalBreak { \clef alto \violaI } >>
+      \new Staff \with { instrumentName = #"ViolaII" } << \removeWithTag #'originalBreak { \clef alto \violaII } >>
+      \new Staff \with { instrumentName = #"Cello" } << \removeWithTag #'originalBreak { \clef bass \cello } >>
     >> }
     \layout {
       \context {
