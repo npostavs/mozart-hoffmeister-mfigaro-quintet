@@ -17,7 +17,6 @@
         \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/1)
       }
     }
-    \midi { }
   }
 }
 
