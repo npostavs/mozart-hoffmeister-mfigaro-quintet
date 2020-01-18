@@ -10,6 +10,7 @@ endef
 paper-size ?= $(shell cat /etc/papersize)
 
 LYFLAGS := -dpaper-size=\"$(paper-size)\"
+LYFLAGS += -dno-point-and-click
 
 all : $(PARTS) score.pdf violin2.pdf viola.pdf
 %.pdf : %.ly
@@ -20,8 +21,10 @@ $(foreach instr,$(INSTRUMENTS),$(eval $(call instrument-part-depend-on-notes,$(i
 score.pdf : $(NOTES)
 
 violin2.pdf : viola1.pdf
-	ln $< $@
+	ln -f $< $@
 viola.pdf : viola2.pdf
-	ln $< $@
+	ln -f $< $@
 
-.PHONY : all
+clean :
+	-rm $(PARTS) score.pdf *.midi
+.PHONY : all clean
