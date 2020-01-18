@@ -50,8 +50,7 @@ cello = \relative c {
   %% original line 8
   d8 r d r g-\f r e r |
   d4 r a=,8-\p a a a \bar "||"
-  \set Score.tempoHideNote = ##t
-  \time 4/4 \tempo "Allegro" 4=120
+  \allegro \grace s4
   d,=,8-\f d' d d d[ d d d] |
   d d d d d d d d | \obr
   %% original line 9

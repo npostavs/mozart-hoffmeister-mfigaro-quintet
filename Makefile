@@ -9,9 +9,10 @@ define instrument-part-depend-on-notes
  $(1).pdf: $(1)-notes.ily
 endef
 
+all : $(PARTS) score.pdf
+
 score.pdf $(PARTS) : defs.ily
 $(foreach instr,$(INSTRUMENTS),$(eval $(call instrument-part-depend-on-notes,$(instr))))
 score.pdf : $(NOTES)
 
-all : $(PARTS) score.pdf
 .PHONY : all

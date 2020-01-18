@@ -56,8 +56,7 @@ violaII = \relative c' {
   %% original line 9
   r a r a r <g g'>-\f r <a g'> |
   <a fs'>4 r a2-\p \bar "||"
-  \set Score.tempoHideNote = ##t
-  \time 4/4 \tempo "Allegro" 4=120 d2.-.-\f d8.-. d16-. |
+  \allegro \grace s4 d2.-.-\f d8.-. d16-. |
   d4-. d8.-. d16-. g4-. e8.-. e16-. |
   a2-\p gs( |
   g!8) r fs r e r cs r | \obr

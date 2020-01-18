@@ -18,3 +18,5 @@ dol = \markup { \italic { dol } }
   arranger = "Hoffmeister"
   tagline = ##f
 }
+
+allegro = { \set Score.tempoHideNote = ##t \time 4/4 \tempo "Allegro" 4=120 }

@@ -61,8 +61,7 @@ flute = \relative c'' {
   d8. e16 fs16-\dol d a fs \ombr
   %% original line 10
   d4-. \grace fs16 e8..( d32) \bar "||"
-  \set Score.tempoHideNote = ##t
-  \time 4/4 \tempo "Allegro" 4=120 d4 r4 r2 |
+  \allegro \grace s4 d4 r4 r2 |
   R1*1 |
   a'4 r8 a8-. a( gs) r d'-. |
   d( cs b a) a( g fs e) |
