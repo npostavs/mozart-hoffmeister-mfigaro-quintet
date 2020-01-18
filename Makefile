@@ -1,9 +1,15 @@
 %.pdf : %.ly
 	lilypond $<
 
-PARTS := flute.pdf violin.pdf viola1.pdf viola2.pdf cello.pdf
+INSTRUMENTS := flute violin viola1 viola2 cello
+PARTS := $(addsuffix .pdf,$(INSTRUMENTS))
 
-$(PARTS) : defs.lyi
+define instrument-part-depend-on-notes
+ $(1): $(1)-notes.ily
+endef
+
+$(PARTS) : defs.ily
+$(foreach instr,$(INSTRUMENTS),$(eval $(call instrument-part-depend-on-notes,$(instr))))
 
 all : $(PARTS)
 .PHONY : all
