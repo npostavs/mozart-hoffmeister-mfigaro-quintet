@@ -8,14 +8,7 @@
   tagline = ##f
 }
 
-obr = { \break
-      } % original music line break
-ombr = { \bar "" \break
-       } % original music mid-bar line break
-
-sfzp = #(make-dynamic-script "sfzp")
-pizz = \markup { pizzicc. }
-arco = \markup { colarco }
+\include "defs.ily"
 
 violin = \relative c'' {
   \key d \major \time 4/4

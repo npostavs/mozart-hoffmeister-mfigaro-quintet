@@ -8,12 +8,7 @@
   tagline = ##f
 }
 
-obr = { \break
-      } % original music line break
-ombr = { \bar "" \break
-       } % original music mid-bar line break
-
-dol = \markup { \italic { dol } }
+\include "defs.ily"
 
 flute = \relative c'' {
   \key d \major \time 4/4
